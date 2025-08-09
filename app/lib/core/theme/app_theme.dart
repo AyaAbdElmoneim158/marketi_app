@@ -1,3 +1,4 @@
+import 'package:app/core/constants/app_strings.dart';
 import 'package:app/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -7,7 +8,7 @@ class AppTheme {
   AppTheme._();
 
   static ThemeData lightTheme = ThemeData(
-    // fontFamily: AppStrings.appFontName,
+    fontFamily: AppStrings.appFontName,
     scaffoldBackgroundColor: AppColors.white,
     appBarTheme: AppBarTheme(
       elevation: 0,
@@ -16,7 +17,6 @@ class AppTheme {
       // color: Colors.,
       systemOverlayStyle: SystemUiOverlayStyle.light,
     ),
-
     textTheme: TextTheme(),
     textSelectionTheme: TextSelectionThemeData(
       cursorColor: AppColors.lightBlue100, // 🔵 Global cursor color
@@ -78,7 +78,6 @@ class AppTheme {
         textStyle: WidgetStatePropertyAll(TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
       ),
     ),
-
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
         foregroundColor: WidgetStatePropertyAll(AppColors.lightBlue100),
@@ -126,7 +125,6 @@ class AppTheme {
       ),
       elevation: 6,
     ),
-
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       mouseCursor: WidgetStatePropertyAll(MouseCursor.uncontrolled),
       selectedItemColor: AppColors.lightBlue100,
