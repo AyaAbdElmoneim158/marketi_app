@@ -2,6 +2,7 @@ import 'package:app/core/common/screen/no_connection_screen.dart';
 import 'package:app/core/routing/app_router.dart';
 import 'package:app/core/routing/app_routes.dart';
 import 'package:app/core/service/connectivity_service.dart';
+import 'package:app/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -25,6 +26,7 @@ class MarketiApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Marketi App',
         debugShowCheckedModeBanner: false,
+        theme: false ? AppTheme.darkTheme : AppTheme.lightTheme,
         builder: (context, widget) => GestureDetector(
           onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
           child: Scaffold(
