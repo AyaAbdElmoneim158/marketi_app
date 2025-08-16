@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'font_weight_helper.dart';
 
-class TextStyles {
+abstract class TextStyles {
+  //TODO: GetFromAuthor
   static TextStyle font24LightBlueBold = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeightHelper.bold,

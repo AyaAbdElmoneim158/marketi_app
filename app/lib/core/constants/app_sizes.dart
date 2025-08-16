@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppSizes {
   AppSizes._();
@@ -24,6 +25,6 @@ class AppSizes {
   static double borderRadiusLg = 12.0;
 }
 
-SizedBox verticalSpace(double height) => SizedBox(height: height);
+SizedBox verticalSpace(double height) => SizedBox(height: height.h);
 
-SizedBox horizontalSpace(double width) => SizedBox(width: width);
+SizedBox horizontalSpace(double width) => SizedBox(width: width.w);
